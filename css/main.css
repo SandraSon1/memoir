@@ -1,0 +1,146 @@
+
+
+
+/* -------- Base styles - these will always apply, no matter what. -------- */
+
+html {
+    /*font-family: 'Nunito', sans-serif;*/
+    font-family: 'Alegreya Sans SC', sans-serif;
+    /* Here we say that every piece of text should be in the Roboto font we loaded from Google in the HTML header; if that can't load, use the browser default sans serif font. */
+
+    font-size: 16px;
+    /* This tells every piece of text should default to 16px in size. We'll use other values as multipliers of this later, but this ensures styling consistency across browsers/platforms. */
+
+    overflow-x: hidden;
+    /* This is telling the browser to hide anything that goes off the left and right edges of the page, and not let the user scroll to see it. */
+  
+
+
+}
+
+body {
+    width: 100%;
+   
+}
+
+/*first page*/
+
+
+.flex-container {
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+
+}
+
+
+.flex-container > #money {
+ 
+ 
+  height: 25vw;
+  width: 60vw;
+  flex-shrink: 1;
+  background-size: cover;
+ background-image: url('../img/buddha.jpg')
+
+}
+
+
+.flex{
+  display: flex;
+
+   justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/*#option{
+  height: 100%;
+  width: 100%;
+  background-color: red;
+}*/
+
+    
+
+i {
+    border: solid black;
+    border-width: 0 1.5px 1.5px 0;
+    display: inline-block;
+    padding: 4px;
+
+}
+
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+#memoir{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 3.5em;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  letter-spacing: 0.25em;
+ /* background-color: pink;*/
+}
+
+#past{
+  letter-spacing: 0.2em;
+  flex:33.3%;
+  text-align: right;
+  font-size: 1.5em;
+   text-decoration: none;
+}
+
+#past:hover{
+ 
+ color:orange;
+}
+
+#present{
+  letter-spacing: 0.2em;
+  flex:33.3%;
+  text-align: center;
+  font-size: 1.5em;
+   text-decoration: none;
+
+}
+#present:hover{
+ 
+ color:orange;
+}
+
+a:link{
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+    text-decoration: none;
+     color: black;
+
+}
+
+a:hover{
+  color:orange;
+}
+
+
+#future{
+   letter-spacing: 0.2em;
+  flex:33.3%;
+  text-align: left;
+  font-size: 1.5em;
+   text-decoration: none;
+}
+#future:hover{
+ 
+ color:orange;
+}
